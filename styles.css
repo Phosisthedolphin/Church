@@ -1,0 +1,184 @@
+/* NOTE: Site primarily uses FLEXBOX for responsive design.
+-------------------------------------------------------
+*********************************
+GENERAL (GLOBAL) VALUES
+********************************* */
+* { 
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'neuro';
+    src: url(./font/neuropolitical.ttf);
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; 
+    background: rgb(199, 155, 121);
+}
+
+h1,
+h2 {
+    font-family: 'PT Serif Caption', serif;
+}
+
+h3 {
+    font-family: 'neuro';
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFE2D6;
+    text-shadow: 2px 2px black;
+}
+
+
+/* **********************************
+HEADER
+********************************** */
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-image: url('./img/WoodGrain.svg');
+    align-items: center;
+    border-bottom: 1px solid rgb(180, 130, 80);
+    border-radius: 20px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    margin: -12px 0 0 0;
+}
+header p {
+    width: 150px;
+    padding: 10px;
+    height: 80px;
+    font-weight: 500;
+}
+header img {
+    margin: 10px 0 0 0;
+}
+/* **********************************
+HERO
+********************************** */
+.hero {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    background-image: linear-gradient(rgba(114, 121, 68, 0.6) 40%, rgba(42, 84, 42, 0.9)), url('./img/congregation.jpg');
+    background-position: 50%, 50%;
+    background-size: cover;
+    margin: -6px;
+    justify-content: flex-end;
+    z-index: 10;
+    
+}
+.hero h1 {
+    font-size: 58px;
+    text-shadow: 2px 2px #222,
+                 3px 3px #222,
+                 4px 4px #222;   
+    color: #FFE2D6;
+    padding-bottom: 30px;
+}
+
+.hero h2 {
+    color: #FFE2D6;
+    text-shadow: 2px 2px #222,
+                 3px 3px #222,
+                 4px 4px #222;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero h2 {
+        font-size: 18px;
+    }
+}
+
+/* *************************************
+NAVBAR JUST BENEATH HERO IMAGE
+************************************* */
+
+.hero-nav {
+    position: relative;
+}
+.hero-nav ul {
+    display: inline-block;
+    padding: 0px;
+    margin: 5px 0;
+}
+.hero-nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(42, 84, 42);
+    margin-right: -4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* **********************************
+MAIN GENERAL PROPERTIES/CONTENT CONTAINERS
+********************************** */
+.main-content {
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1000px;
+    flex-direction: column;
+    padding: 20px;
+}
+.content-container {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    max-width: 1000px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* **********************************
+MAIN PANEL 1
+********************************** */
+.main-1 {
+    display: flex;
+}
+/* **********************************
+MAIN PANEL 2
+********************************** */
+.main-2 {
+    display: flex;
+}
+/* **********************************
+MAIN PANEL 3
+********************************** */
+.main-3 {
+    display: flex;
+}
+/* **********************************
+FOOTER
+********************************** */
+footer {
+    height: 300px;
+    background: #426063;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: flex-end;
+}
+
